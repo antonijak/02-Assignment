@@ -7,6 +7,8 @@
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: #f2f2f2;
+  max-width: 1428px;
+  margin: 0 auto;
 }
 
 /* ________________HEADER________________ */
@@ -23,11 +25,12 @@ header {
   border-bottom: 10px solid transparent;
   border-image: url(../assets/Border-BG.png) 30 repeat;
   padding-top: 5px;
+  align-items: center;
 }
 
 #main-picture,
 #main-headline {
-  flex: 0 32%;
+  flex: 0 27rem;
 }
 
 #main-picture img {
@@ -57,10 +60,6 @@ header {
   color: white;
 }
 
-#banner1 {
-  flex-basis: 70%;
-}
-
 .banner {
   height: 80px;
   display: flex;
@@ -69,6 +68,8 @@ header {
   background-color: #599cde;
   margin-top: 10px;
   position: relative;
+  width: 62.4rem;
+  max-width: 100%;
 }
 
 .banner h2 {
@@ -81,7 +82,7 @@ header {
   border: 50px solid white;
   border-left-color: #599cde;
   border-right-color: transparent;
-  border-top-color: transparent;
+  border-top-color: #599cde;
   border-bottom-color: transparent;
 }
 
@@ -103,20 +104,17 @@ header {
 
 .banner ::after {
   content: "";
-
   position: absolute;
-  top: 37.5%;
-  left: 5%;
+  top: 5rem;
+  left: 1.55rem;
   transform: translateX(-50%);
-  border: 50px solid white;
+  border: 25px solid white;
   border-left-color: #599cde;
   border-right-color: transparent;
-  border-top-color: transparent;
+  border-top-color: #599cde;
   border-bottom-color: transparent;
-  
   width: 0;
   height: 0;
-  
   margin: 0 auto;
 }
 
@@ -129,7 +127,7 @@ header {
 
 main {
   margin: auto;
-  width: 70%;
+  width: 62.4rem;
 }
 
 /* ________1 FIRST ROW________ */
@@ -137,15 +135,17 @@ main {
 #first-row {
   display: flex;
   flex-wrap: wrap;
-  margin: 80px 0;
+  margin-top: 4rem;
 }
 
 .traits {
-  flex-basis: 25%;
+  width: 15.5rem;
+  height: 25.1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2em 0;
+  margin-bottom: 5rem;
 }
 
 .round-icon {
@@ -199,22 +199,17 @@ main {
 
 #multi::after {
   content: "";
-
   position: absolute;
-  top: 85%;
-  left: 20%;
+  top: 25rem;
+  left: 1.4rem;
   transform: translateX(-50%);
-  
-  border: 50px solid white;
-  
+  border: 22px solid white;
   border-left-color: white;
   border-right-color: transparent;
-  border-top-color: transparent;
+  border-top-color: white;
   border-bottom-color: transparent;
-  
   width: 0;
   height: 0;
-  
   margin: 0 auto;
 }
 
@@ -228,7 +223,7 @@ main {
   justify-content: space-between;
   border-top: 10px solid transparent;
   border-image: url(../assets/Border-BG.png) 30 repeat;
-  padding: 2em 0 6em;
+  padding-top: 2rem;
 }
 
 .border-text {
@@ -246,10 +241,12 @@ main {
 }
 
 .blog-title {
-  flex-basis: 32%;
+  width: 20rem;
   background-color: white;
   position: relative;
   box-shadow: 15px 0px 40px -20px grey;
+  margin-bottom: 6rem;
+  height: 20.38rem;
 }
 
 .blog-title img {
@@ -270,22 +267,17 @@ main {
 
 .blog-title ::after {
   content: "";
-
   position: absolute;
-  top: 83%;
-  left: 15.6%;
+  top: 20rem;
+  left: 1.6rem;
   transform: translateX(-50%);
-  
-  border: 50px solid white;
-  
+  border: 25px solid white;
   border-left-color: white;
   border-right-color: transparent;
-  border-top-color: transparent;
+  border-top-color: white;
   border-bottom-color: transparent;
-  
   width: 0;
   height: 0;
-  
   margin: 0 auto;
 }
 
@@ -298,7 +290,7 @@ main {
 }
 
 #testimonials {
-  flex-basis: 66%;
+  width: 41.22rem;
   position: relative;
   border-top: 10px solid transparent;
   border-image: url(../assets/Border-BG.png) 30 repeat;
@@ -307,13 +299,14 @@ main {
   justify-content: space-between;
   align-items: center;
   height: 100%;
+  padding-top: 2rem;
 }
 
 .tes {
   background-color: white;
-  flex-basis: 48.5%;
-  height: 150px;
-  margin-top: 60px;
+  width: 20rem;
+  height: 8.7rem;
+  margin-bottom: 3.75rem;
   position: relative;
   box-shadow: 15px 0px 40px -20px grey;
 }
@@ -332,43 +325,41 @@ main {
 
 .tes ::after {
   content: "";
-
   position: absolute;
-  top: 76%;
-  left: 11%;
+  top: 8.7rem;
+  left: 1rem;
   transform: translateX(-50%);
-  border: 35px solid white;
-  
+  border: 16px solid white;
   border-left-color: white;
   border-right-color: transparent;
-  border-top-color: transparent;
+  border-top-color: white;
   border-bottom-color: transparent;
-  
   width: 0;
   height: 0;
-  
   margin: 0 auto;
+  z-index: -1;
 }
 
 #developement {
-  flex-basis: 32%;
+  width: 20rem;
   position: relative;
   border-top: 10px solid transparent;
   border-image: url(../assets/Border-BG.png) 30 repeat;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
+
+/* _______TABS_______ */
 
 .tabs {
+
   position: relative;
-  clear: both;
-  height: 81.8%;
+  display: flex;
+  height: 20.2rem;
+  margin-top: 3rem;
 }
 
-.tab {
-  float: left;
-}
 
 .tab label {
   background: #eee;
@@ -424,13 +415,7 @@ main {
   border-radius: 4px;
   border: none;
   align-self: flex-end;
-}
-
-#banner2 {
-  flex-basis: 100%;
-  color: white;
-  margin-top: 5em;
-}
+} 
 
 /* ________FOOTER________ */
 
@@ -439,10 +424,17 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 2rem;
 }
 
+#banner2 {
+  color: white;
+  margin: 0%;
+}
+
+
 #footer-items {
-  width: 70%;
+  width: 62.4rem;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -450,12 +442,27 @@ footer {
   color: white;
   font-weight: lighter;
   font-size: .8em;
-  padding: 6em 0 3em;
+  padding: 5em 0 3em;
 }
 
 .foot-item {
-  flex-basis: 23%;
+ width: 13rem;
+ margin: .5rem;
 }
+
+.foot-post {
+  border-bottom: 1px solid white;
+  padding-bottom: 1em;
+  margin-bottom: 0;
+}
+#first-post {
+  border-color: #599cde;
+}
+
+#second-post {
+  color: #599cde;
+}
+
 
 #flickr {
   display: flex;
@@ -473,7 +480,7 @@ footer {
 }
 
 .black-square {
-  flex-basis: 24.1%;
+  width: 24.1%;
   background-color: #262626;
   min-height: 55px;
   margin-bottom: 1%;
@@ -509,3 +516,157 @@ footer {
   color: #262626;
   right: 1%;
 }
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  /* visibility: hidden; */
+  width: 100px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 3px 3px 3px 0;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left:20px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 99%;
+  left: 5px;
+  margin-left: -5px;
+  border-width: 7px;
+  border-style: solid;
+  border-color:   #555 transparent transparent #555 ;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+#top-arrow {
+  font-size: 1rem;
+}
+
+/* _______MEDIA QUERIES_______ */
+
+  @media only screen  and (max-width : 1422px) {
+    
+    body {
+      max-width: 100%;
+    }
+
+    .traits {
+      flex-grow: 1;
+    } 
+
+    #first-row {
+      margin-bottom: 0;
+    }
+
+    #middle-row {
+      justify-content: center;
+      
+    }
+
+    .blog-title {
+      margin-left: .5rem;
+      margin-right: .5rem;
+    }
+
+
+    #testimonials, #developement {
+      flex-grow: 2;
+    }
+
+    #testimonials {
+      margin-bottom: 3rem;
+      justify-content: center;
+    }
+
+    .tes {
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
+    }
+
+  }
+  @media only screen  and (max-width : 1030px) {
+
+    main {
+      width: 90%;
+    }
+
+    #footer-items {
+      width: 90%;
+    }
+
+    .tes {
+      width: 15rem;
+      height: 10rem;
+    }
+    .tes ::after {
+      top: 9.7rem;
+    }
+
+
+  } 
+
+  @media only screen  and (max-width : 769px) {
+
+    main {
+      width: 90%;
+    }
+
+    #main-picture, #main-headline {
+      padding: 0 1rem;
+      text-align: center;
+    }
+
+    #main-headline {
+      flex-grow: 2;
+      margin-bottom: 2rem;
+    }
+
+    #footer-items {
+      width: 90%;
+      justify-content: space-around;
+      padding: 2rem;
+    }
+
+    .foot-item {
+      width: 15rem;
+    }
+
+  }
+
+  @media only screen  and (max-width : 320px) {
+      .banner h2 {
+        margin-left: 1rem;
+        font-size: 1rem;
+      }
+
+      main {
+        margin-top: 2rem;
+      }
+
+      .traits {
+        margin-bottom: 2rem;
+      }
+
+      .blog-title {
+        margin-left: 0;
+        margin-right: 0;
+        flex-grow: 1;
+      }
+  
+  }
