@@ -8,6 +8,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   background-color: #f2f2f2;
   max-width: 1428px;
+  min-width: 320px;
   margin: 0 auto;
 }
 
@@ -241,7 +242,7 @@ main {
 }
 
 .blog-title {
-  width: 20rem;
+  width: 19rem;
   background-color: white;
   position: relative;
   box-shadow: 15px 0px 40px -20px grey;
@@ -523,7 +524,7 @@ footer {
 }
 
 .tooltip .tooltiptext {
-  /* visibility: hidden; */
+  visibility: hidden;
   width: 100px;
   background-color: #555;
   color: #fff;
@@ -560,22 +561,21 @@ footer {
 
 /* _______MEDIA QUERIES_______ */
 
-  @media only screen  and (max-width : 1422px) {
+   @media (max-width : 1000px) {
     
-    body {
-      max-width: 100%;
+    main {
+      width: 95%;
     }
-
-    .traits {
-      flex-grow: 1;
-    } 
 
     #first-row {
       margin-bottom: 0;
     }
+    .traits {
+      flex-grow: 1;
+    } 
 
     #middle-row {
-      justify-content: center;
+      justify-content: space-between;
       
     }
 
@@ -583,7 +583,6 @@ footer {
       margin-left: .5rem;
       margin-right: .5rem;
     }
-
 
     #testimonials, #developement {
       flex-grow: 2;
@@ -593,31 +592,20 @@ footer {
       margin-bottom: 3rem;
       justify-content: center;
     }
-
-    .tes {
-        margin-left: 1.2rem;
-        margin-right: 1.2rem;
-    }
-
-  }
-  @media only screen  and (max-width : 1030px) {
-
-    main {
-      width: 90%;
-    }
-
-    #footer-items {
-      width: 90%;
-    }
-
     .tes {
       width: 15rem;
       height: 10rem;
+      margin-left: 1.2rem;
+      margin-right: 1.2rem;
+      flex-grow: 1;
     }
     .tes ::after {
       top: 9.7rem;
     }
 
+    #footer-items {
+      width: 90%;
+    }
 
   } 
 
@@ -649,7 +637,7 @@ footer {
 
   }
 
-  @media only screen  and (max-width : 320px) {
+  @media only screen  and (max-width : 375px) {
       .banner h2 {
         margin-left: 1rem;
         font-size: 1rem;
@@ -657,10 +645,11 @@ footer {
 
       main {
         margin-top: 2rem;
+        width: 100%;
       }
 
       .traits {
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
       }
 
       .blog-title {
@@ -668,5 +657,23 @@ footer {
         margin-right: 0;
         flex-grow: 1;
       }
-  
-  }
+      
+      #links {
+        height: fit-content;
+        flex-direction: column;
+        padding: 1rem;
+      }
+
+      #links h4 {
+        margin-left: 1rem;
+        margin-right:1rem;
+      }
+      
+      .tooltip .tooltiptext {
+        left:-20px;
+      }
+
+      #arrow {
+        position: initial;
+      }
+    }
