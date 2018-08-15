@@ -21,6 +21,7 @@ header {
   align-items: flex-start;
   height: 400px;
   background-color: #4c4c4c;
+  background: radial-gradient(circle, #666666, #4c4c4c);
   color: white;
   height: fit-content;
   border-bottom: 10px solid transparent;
@@ -58,6 +59,7 @@ header {
 
 #main-headline button {
   background-color: #599cde;
+  background: linear-gradient(#599cde, #4f779f);
   color: white;
 }
 
@@ -67,6 +69,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #599cde;
+  background: linear-gradient(#599cde, #4f779f);
   margin-top: 10px;
   position: relative;
   width: 62.4rem;
@@ -110,9 +113,9 @@ header {
   left: 1.55rem;
   transform: translateX(-50%);
   border: 25px solid white;
-  border-left-color: #599cde;
+  border-left-color: #4f779f;
   border-right-color: transparent;
-  border-top-color: #599cde;
+  border-top-color: #4f779f;
   border-bottom-color: transparent;
   width: 0;
   height: 0;
@@ -151,6 +154,7 @@ main {
 
 .round-icon {
   background-color: #4c4c4c;
+  background: radial-gradient(circle, #666666, #4c4c4c);
   width: 70px;
   height: 70px;
   display: table;
@@ -185,6 +189,7 @@ main {
 
 .traits button {
   background-color: #599cde;
+  background: linear-gradient(#599cde, #4f779f);
   color: white;
   padding: 14px 20px;
   font-size: .9em;
@@ -192,13 +197,23 @@ main {
   border: none;
 }
 
-#multi {
+.traits:hover {
   background-color: white;
   position: relative;
   box-shadow: 15px 0px 40px -20px grey;
 }
 
-#multi::after {
+.traits:hover .round-icon {
+  background-color: #599cde;
+  background: radial-gradient(circle, #599cde, #4f779f);
+}
+
+.traits:hover button {
+  display: none;
+}
+
+
+.traits:hover::after {
   content: "";
   position: absolute;
   top: 25rem;
@@ -212,7 +227,9 @@ main {
   width: 0;
   height: 0;
   margin: 0 auto;
+ 
 }
+
 
 
 /* ________2 MIDDLE ROW________ */
@@ -410,6 +427,7 @@ main {
 
 .tab-content button {
   background-color: #599cde;
+  background: linear-gradient(#599cde, #4f779f);
   color: white;
   padding: 13px 19px;
   font-size: .9em;
@@ -516,15 +534,18 @@ footer {
 }
 
 #arrow {
-  position: absolute;
+  position: fixed;
+  top: 90%;
+  left: 90%%;
   font-size: 60px;
   color: #262626;
   right: 1%;
 }
 
-#arrow:hover {
-  color: white;
+.fa-caret-square-up {
+  border-radius: 50%;
 }
+
 
 .tooltip {
   position: relative;
