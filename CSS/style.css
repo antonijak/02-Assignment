@@ -511,6 +511,10 @@ footer {
   font-size: 27px;
 }
 
+#icons i:hover {
+  color: white;
+}
+
 #arrow {
   position: absolute;
   font-size: 60px;
@@ -518,12 +522,17 @@ footer {
   right: 1%;
 }
 
+#arrow:hover {
+  color: white;
+}
+
 .tooltip {
   position: relative;
   display: inline-block;
 }
 
-.tooltip .tooltiptext {
+
+  .tooltip .tooltiptext {
   visibility: hidden;
   width: 100px;
   background-color: #555;
@@ -551,13 +560,10 @@ footer {
 }
 
 .tooltip:hover .tooltiptext {
+  color: white;
   visibility: visible;
   opacity: 1;
-}
-
-#top-arrow {
-  font-size: 1rem;
-}
+} 
 
 /* _______MEDIA QUERIES_______ */
 
@@ -606,6 +612,7 @@ footer {
     #footer-items {
       width: 90%;
     }
+
 
   } 
 
@@ -677,3 +684,5 @@ footer {
         position: initial;
       }
     }
+
+   
