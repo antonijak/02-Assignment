@@ -5,6 +5,7 @@
 }
 
 body {
+  width: 100vw;
   font-family: 'Open Sans', sans-serif;
   background-color: #f2f2f2;
   max-width: 1428px;
